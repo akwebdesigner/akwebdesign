@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import akLogo from "@/assets/ak-logo.png.asset.json";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -32,9 +33,13 @@ export function SiteHeader() {
     >
       <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 lg:px-8">
         <a href="#home" className="flex min-w-0 items-center gap-2">
-          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-[image:var(--gradient-royal)] font-display text-sm font-bold text-primary-foreground">
-            AK
-          </span>
+          <img
+            src={akLogo.url}
+            alt="AK Web Design logo"
+            width={36}
+            height={36}
+            className="h-9 w-9 shrink-0 rounded-xl object-cover"
+          />
           <span className="truncate font-display text-lg font-semibold tracking-tight">
             AK Web Design
           </span>

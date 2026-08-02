@@ -6,9 +6,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 
 export const CONTACT = {
-  email: "hello@akwebdesign.com",
-  whatsappNumber: "+92 300 0000000",
-  whatsappLink: "https://wa.me/923000000000",
+  email: "akwebdesign945@gmail.com",
+  whatsappNumber: "+92 310 6711420",
+  whatsappLink: "https://wa.me/923106711420",
   location: "Available worldwide — remote projects",
 };
 

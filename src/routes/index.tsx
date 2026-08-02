@@ -28,6 +28,7 @@ import { useReveal } from "@/hooks/use-reveal";
 import boutiqueImg from "@/assets/sample-boutique.jpg";
 import jewelleryImg from "@/assets/sample-jewellery.jpg";
 import watchImg from "@/assets/sample-watch.jpg";
+import akLogo from "@/assets/ak-logo.png.asset.json";
 
 const title = "AK Web Design — Professional Website Design for Modern Businesses";
 const description =
@@ -315,9 +316,13 @@ function Index() {
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
             <div>
               <div className="flex items-center gap-2">
-                <span className="grid h-9 w-9 place-items-center rounded-xl bg-[image:var(--gradient-royal)] font-display text-sm font-bold text-primary-foreground">
-                  AK
-                </span>
+                <img
+                  src={akLogo.url}
+                  alt="AK Web Design logo"
+                  width={36}
+                  height={36}
+                  className="h-9 w-9 rounded-xl object-cover"
+                />
                 <span className="font-display text-lg font-semibold">AK Web Design</span>
               </div>
               <p className="mt-4 max-w-xs text-sm text-ink-foreground/65">
