@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import akLogo from "@/assets/ak-logo.png.asset.json";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -39,7 +40,6 @@ export function SiteHeader() {
             height={36}
             className="h-9 w-9 shrink-0 rounded-xl object-cover"
           />
-        </a>
           <span className="truncate font-display text-lg font-semibold tracking-tight">
             AK Web Design
           </span>
