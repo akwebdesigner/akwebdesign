@@ -12,7 +12,7 @@ const isPages = process.env['GITHUB_PAGES'] === "true";
 const basePath = process.env['PAGES_BASE_PATH'] ?? "/";
 
 export default defineConfig({
-  ...(isPages ? { vite: { base: basePath }, nitro: { preset: "static" as const } } : {}),
+  ...(isPages ? { vite: { base: basePath }, nitro: false as const } : {}),
   tanstackStart: isPages
     ? { prerender: { enabled: true, crawlLinks: true } }
     : {
