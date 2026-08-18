@@ -244,21 +244,24 @@ function Index() {
                   key={p.name}
                   className="reveal overflow-hidden rounded-3xl border border-ink-foreground/12 bg-ink-foreground/[0.04] transition-transform duration-300 hover:-translate-y-1"
                 >
-                  <img
-                    src={p.image}
-                    alt={`${p.name} design preview`}
-                    loading="lazy"
-                    width={1024}
-                    height={768}
-                    className="aspect-[4/3] w-full object-cover"
-                  />
+                  <div className="bg-background p-6">
+                    <img
+                      src={p.image}
+                      alt={`${p.name} logo`}
+                      loading="lazy"
+                      width={1024}
+                      height={1024}
+                      className="mx-auto aspect-[4/3] w-full object-contain"
+                    />
+                  </div>
                   <div className="p-6">
                     <span className="eyebrow">Sample project</span>
                     <h3 className="mt-2 text-lg font-semibold">{p.name}</h3>
                     <p className="mt-2 text-sm text-ink-foreground/65">{p.text}</p>
+                    <p className="mt-3 break-all text-xs text-ink-foreground/50">{p.href}</p>
                     <Button variant="royal" size="sm" className="mt-5" asChild>
-                      <a href="#contact">
-                        View Demo <ArrowRight className="size-4" />
+                      <a href={p.href} target="_blank" rel="noopener noreferrer">
+                        View Website <ArrowRight className="size-4" />
                       </a>
                     </Button>
                   </div>
