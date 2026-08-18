@@ -25,9 +25,9 @@ import {
 import { SiteHeader } from "@/components/site-header";
 import { ContactSection, CONTACT } from "@/components/contact-section";
 import { useReveal } from "@/hooks/use-reveal";
-import boutiqueImg from "@/assets/sample-boutique.jpg";
-import jewelleryImg from "@/assets/sample-jewellery.jpg";
-import watchImg from "@/assets/sample-watch.jpg";
+import primeTimeLogo from "@/assets/prime-time-watches.png.asset.json";
+import almasLogo from "@/assets/almas-jewellers.png.asset.json";
+import noorsLogo from "@/assets/noors-collection.png.asset.json";
 import akLogo from "@/assets/ak-logo.png.asset.json";
 
 const title = "AK Web Design — Professional Website Design for Modern Businesses";
@@ -83,19 +83,22 @@ const services = [
 
 const projects = [
   {
-    name: "Sample Boutique Website",
-    text: "A concept storefront for a fashion boutique with collection grid and lookbook.",
-    image: boutiqueImg,
+    name: "Prime Time Watches",
+    text: "A premium watch store website with detailed product presentation and clear pricing.",
+    image: primeTimeLogo.url,
+    href: "https://akwebdesigner.github.io/prime-time-watches/",
   },
   {
-    name: "Sample Jewellery Website",
-    text: "A concept layout for a jewellery brand with a dark, luxury product showcase.",
-    image: jewelleryImg,
+    name: "Almas Jewellers",
+    text: "An elegant jewellery brand website with a refined, luxury product showcase.",
+    image: almasLogo.url,
+    href: "https://akwebdesigner.github.io/almas-jewellers/",
   },
   {
-    name: "Sample Watch Store Website",
-    text: "A concept design for a watch store focused on detail shots and clear pricing.",
-    image: watchImg,
+    name: "Noor's Collection",
+    text: "A modern boutique website with a graceful collection layout for women's fashion.",
+    image: noorsLogo.url,
+    href: "https://akwebdesigner.github.io/noor-s-collection/",
   },
 ];
 
