@@ -25,10 +25,7 @@ import {
 import { SiteHeader } from "@/components/site-header";
 import { ContactSection, CONTACT } from "@/components/contact-section";
 import { useReveal } from "@/hooks/use-reveal";
-import primeTimeLogo from "@/assets/prime-time-watches.png.asset.json";
-import almasLogo from "@/assets/almas-jewellers.png.asset.json";
-import noorsLogo from "@/assets/noors-collection.png.asset.json";
-import akLogo from "@/assets/ak-logo.png.asset.json";
+import { siteAsset } from "@/lib/asset-url";
 
 const title = "AK Web Design — Professional Website Design for Modern Businesses";
 const description =
@@ -85,19 +82,19 @@ const projects = [
   {
     name: "Prime Time Watches",
     text: "A premium watch store website with detailed product presentation and clear pricing.",
-    image: primeTimeLogo.url,
+    image: siteAsset("prime-time-watches.png"),
     href: "https://akwebdesigner.github.io/prime-time-watches/",
   },
   {
     name: "Almas Jewellers",
     text: "An elegant jewellery brand website with a refined, luxury product showcase.",
-    image: almasLogo.url,
+    image: siteAsset("almas-jewellers.png"),
     href: "https://akwebdesigner.github.io/almas-jewellers/",
   },
   {
     name: "Noor's Collection",
     text: "A modern boutique website with a graceful collection layout for women's fashion.",
-    image: noorsLogo.url,
+    image: siteAsset("noors-collection.png"),
     href: "https://akwebdesigner.github.io/noor-s-collection/",
   },
 ];
@@ -323,7 +320,7 @@ function Index() {
             <div>
               <div className="flex items-center gap-2">
                 <img
-                  src={akLogo.url}
+                  src={siteAsset("ak-logo.png")}
                   alt="AK Web Design logo"
                   width={36}
                   height={36}
